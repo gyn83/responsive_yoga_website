@@ -486,7 +486,7 @@ margin-bottom: 75px;
 .map a {
     width: 80%;
 }
-.map .img2 {
+.img2 {
     margin-bottom: 0;
 }
 .map img {
@@ -512,5 +512,65 @@ footer {
 }
 
 
+    
+}
+
+/* QUERY MAX WIDTH 1440px */
+
+@media (max-width:1440px) {
+
+    body, html {
+        overflow-x: hidden;
+    }
+
+
+/* YOGA STYLES */
+
+.yogaBoxWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 80%;
+    margin-left: 10%;
+    padding-bottom: 25px;
+}
+
+.yogaBox {
+    padding: 50px;
+}
+
+.yogaBox:hover {
+    -webkit-box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.51);
+    -moz-box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.51);
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.51);
+}
+
+.right {
+    border-right: 2px solid #18191D;
+}
+
+.bottom {
+    border-bottom: 2px solid #18191D;
+}
+.boxText {
+    display: flex;
+}
+
+
+
+/* MAP STYLES */
+
+
+.map {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.map img {
+    margin-bottom: 100px;
+}
+.img .img2 {
+    margin-bottom: 0;
+}
     
 }
