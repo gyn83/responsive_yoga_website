@@ -37,7 +37,7 @@
     }
     .icon {
         height: 50px;
-        padding-left: 0;
+        padding-left: 25px;
         margin-bottom: 25px;
     }
     
@@ -93,6 +93,7 @@ header {
     grid-template-rows: auto;
     width: 90%;
     margin: 0 auto;
+    padding-top: 25px; 
 }
 .yogaBox {
     padding: 15px;
@@ -113,8 +114,9 @@ header {
     margin: 25px auto;
 }
 .boxText {
-   text-align: center;
-   display: block
+   justify-content: center;
+   align-items: center;
+   display: flex;
 }
 
 /* PRACTICE STYLES */
