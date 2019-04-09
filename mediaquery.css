@@ -15,6 +15,9 @@
         font-size: 2rem;
         text-align: center;
         margin-bottom: 25px;
+        margin-left: 5%;
+        margin-right: 5%;
+        word-wrap: break-word;
     }
 
     h2 {
@@ -563,13 +566,12 @@
 
 /* QUERY MAX WIDTH 1440px */
 
-@media (max-width:1440px) {
+@media (min-width:1440px) {
 
     body,
     html {
         overflow-x: hidden;
     }
-
 
     /* YOGA STYLES */
 
@@ -592,13 +594,7 @@
         box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.51);
     }
 
-    .right {
-        border-right: 2px solid #18191D;
-    }
-
-    .bottom {
-        border-bottom: 2px solid #18191D;
-    }
+   
 
     .boxText {
         display: flex;
