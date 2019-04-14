@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 
 <head>
     <meta charset="UTF-8">
@@ -11,15 +11,42 @@
     <link rel="stylesheet" href="modal.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaquery.css">
-    <title>Document</title>
+    <title>Responsive Yoga Website</title>
 </head>
 
 <body>
 
     <!-- HEADER -->
 
+    <!-- NAV -->
+
+    <nav class="navbar">
+        <div class="navbar_header">
+            <div class="navbar_btn">
+                <div class="bar bar1"></div>
+                <div class="bar bar2"></div>
+                <div class="bar bar3"></div>
+            </div>
+        </div>
+
+     <!-- LINKS -->   
+     <ul class="navbar_links">
+         <li><a href="#about" class="navbar_single-link"><img src="img/about_nav.png" alt="about" class="iconNav"> Ki vagyok?</a></li>
+         <li><a href="#yoga" class="navbar_single-link"><img src="img/yoga_nav.png" alt="yoga" class="iconNav"> Miért a Jóga?</a></li>
+         <li><a href="#practice" class="navbar_single-link"><img src="img/practice_nav.png" alt="practice" class="iconNav"> Gyakorlóim</a></li>
+         <li><a href="#contact" class="navbar_single-link"><img src="img/placeholder.png" alt="placeholder" class="iconNav"> Hol találsz?</a></li>
+         <li><a href="#footer" class="navbar_single-link"><img src="img/social media.png" alt="social media" class="iconNav"> Közösségi média</a></li>
+     </ul>
+
+     <!-- END LINKS -->
+    </nav>
+
+    <!-- END NAV -->
+
     <header>
-        <img src="img/mouse.svg" alt="animated mouse image" class="animatedMouse animated infinite bounce slow">
+        <div class="animatedMouseWrapper">
+                <img src="img/mouse.svg" alt="animated mouse image" class="animatedMouse animated infinite bounce slow">
+        </div>
     </header>
 
     <!-- END HEADER -->
@@ -31,7 +58,7 @@
     <!-- ABOUT SECTION -->
 
     <div class="dividerBottomWhite"></div>
-    <section class="about">
+    <section class="about" id="about">
         <h1 class="headingText">Ki vagyok?</h1>
         <div class="aboutContainer">
             <img src="img/profil.jpg" alt="Profil image">
@@ -97,7 +124,7 @@
 
     <!-- YOGA SECTION -->
 
-    <section class="yoga">
+    <section class="yoga" id="yoga">
         <h1 class="headingText">Miért a jóga?</h1>
         <div class="dividerOrange"></div>
         <div class="yogaContainer">
@@ -151,7 +178,7 @@
 
     <!-- PRACTICE SECTION -->
 
-    <section class="practice">
+    <section class="practice" id="practice">
         <h1 class="headingText">Ők már velem gyakorolnak</h1>
         <div class="practiceBoxWrapper">
             <div class="practiceBox">
@@ -183,7 +210,7 @@
 
     <!-- CONTACT SECTION -->
 
-    <section class="contact">
+    <section class="contact" id="contact">
         <h1 class="headingText">Hol találsz?</h1>
         <div class="dividerOrange"></div>
         <div class="contactContainer">
@@ -223,15 +250,15 @@
     </div>
 
     <!-- END CONTACT SECTION -->
-
-
-
-
-
+    
+    
+    
+    
+    
     <!-- FOOTER -->
 
     <footer>
-        <div class="linkswrapper">
+        <div class="linkswrapper" id="footer">
             <a href="#" class="socialLinks"><i class="fab fa-facebook"></i></a>
             <a href="#" class="socialLinks"><i class="fab fa-twitter-square"></i></a>
             <a href="#" class="socialLinks"><i class="fab fa-youtube-square"></i></a>
@@ -246,5 +273,4 @@
     <script src="script.js"></script>
 
 </body>
-
 </html>

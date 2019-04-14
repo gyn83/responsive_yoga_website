@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,900');
 
+/* COLORS 
+
+orange: #FF9F1A;
+black:  #18191D;
+white:  #fff;
+
+*/
+
 /* CSS RESET */
 
 * {
@@ -19,6 +27,8 @@ html {
 
 section {
     margin-bottom: 100px;
+    width: 100%;
+    overflow: hidden;
 }
 
 h1 {
@@ -29,7 +39,6 @@ h1 {
 
 h2 {
     font-size: 3rem;
-    z-index: 1000;
     padding: 25px 0;
 }
 
@@ -83,10 +92,11 @@ h2 {
 /* DIVIDER STYLE */
 
 .dividerBottomWhite {
-    background: url('img/divider_white.svg') no-repeat;
-    height: 280px;
+    background: url('img/divider_bottom_white\ \(3\).png') no-repeat;
+    height: 200px;
     width: 100vw;
     margin-top: -200px;
+    
 }
 
 .dividerOrange {
@@ -96,14 +106,98 @@ h2 {
 }
 
 .dividerOrangeBottom {
-    background: url('img/divider_orange_top.svg') no-repeat;
-    height: 200px;
+    background: url('img/divider_bottom_orange.png') no-repeat;
+    height: 210px;
     width: 100vw;
-    transform: rotate(180deg);
-    -webkit-transform: rotate(180deg);
-    -moz-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    -o-transform: rotate(180deg);
+    margin-top: -1px;
+}
+
+
+/* NAVBAR */
+
+.navbar {
+    position: fixed;
+}
+.navbar_btn {
+    cursor: pointer;
+    margin: 25px;
+    position: fixed;
+    z-index: 1000;
+}
+.bar,.bar2,.bar3 {
+    width: 30px;
+    height: 3px;
+    margin: 0.5rem;
+    background: #18191D;
+    transition:all 0.8s ease;
+    -webkit-transition:all 0.8s ease;
+    -moz-transition:all 0.8s ease;
+    -ms-transition:all 0.8s ease;
+    -o-transition:all 0.8s ease;
+}
+
+.change .bar1 {
+    transform: rotate(-45deg) translate(-10px, 10px);
+    -webkit-transform: rotate(-45deg) translate(-10px, 10px);
+    -moz-transform: rotate(-45deg) translate(-10px, 10px);
+    -ms-transform: rotate(-45deg) translate(-10px, 10px);
+    -o-transform: rotate(-45deg) translate(-10px, 10px);
+    
+}
+.change .bar2 {
+   opacity: 0;
+}
+.change .bar3 {
+    transform: rotate(45deg) translate(-5px, -5px);
+    -webkit-transform: rotate(45deg) translate(-5px, -5px);
+    -moz-transform: rotate(45deg) translate(-5px, -5px);
+    -ms-transform: rotate(45deg) translate(-5px, -5px);
+    -o-transform: rotate(45deg) translate(-5px, -5px);
+    
+}
+.navbar_links {
+    list-style-type: none;
+    transition: all 0.8s ease;
+    padding-top: 100px;
+    height: 1000px;
+    background: rgba(255, 160, 26, 1) url('img/mandala.png') right/cover;
+    border-right: 2px solid #18191D;
+    min-width: 300px;
+    
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+}
+.iconNav {
+    height: 25px;
+}
+
+.navbar_collapse {
+    transform: translateX(0)    ;
+    -webkit-transform: translateX(0)    ;
+    -moz-transform: translateX(0)    ;
+    -ms-transform: translateX(0)    ;
+    -o-transform: translateX(0)    ;
+}
+.navbar_single-link {
+    display: block;
+    text-decoration: none;
+    text-align: left;
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: #18191D;
+    transition: all 0.8s ease;
+    -webkit-transition: all 0.8s ease;
+    -moz-transition: all 0.8s ease;
+    -ms-transition: all 0.8s ease;
+    -o-transition: all 0.8s ease;
+    cursor: pointer;
+}
+.navbar_single-link:hover {
+    padding-left: 1.5rem;
+    font-weight: bold;
 }
 
 /* HEADER STYLES */
@@ -112,21 +206,26 @@ header {
     background: url('img/cover.jpg') center/cover no-repeat;
     min-height: 1100px;
     height: 100vh;
-    overflow: hidden;
+}
+.animatedMouseWrapper {
+    width: 100%;
+    height: 100%;
+    text-align: center;
 }
 
 .animatedMouse {
-    position: absolute;
-    right: 50%;
-    bottom: 5%;
     height: 80px;
+    position: relative;
+    top: 75%;
 }
 
 
 /* ABOUT STYLES */
-
+.about {
+    margin-top: -50px;
+}
 .aboutContainer {
-    background: #FF9F1A;
+    background: #FF9F1A url('img/mandala.png') top/cover;
     text-align: center;
     border-radius: 20px;
     -webkit-border-radius: 20px;
@@ -207,7 +306,6 @@ header {
 .bottom {
     border-bottom: 2px solid #18191D;
 }
-
 .boxText {
     display: flex;
 }
