@@ -129,6 +129,20 @@
     display: none;
   }
 
+   /* MODAL */
+
+   .modal-content {
+    margin: 0 auto;
+    width: 95%;
+  }
+  .modalContainer {
+    width: 100%;
+  }
+  .modalContainer img {
+    width: 95%;
+    margin: 0 auto;
+  }
+
   /* ABOUT STYLES */
 
   .aboutContainer {
