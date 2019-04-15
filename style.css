@@ -407,6 +407,7 @@ header {
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
   margin-left: 50px;
+  width: 45%;
 }
 
 .map img:hover {
