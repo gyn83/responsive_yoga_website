@@ -1,230 +1,359 @@
-
 /* LAPTOP L MAX-WIDTH 1440px */
 
 @media screen and (max-width: 1440px) {
-
-body {
+  body {
     /* background: lightblue; */
-    }    
+  }
 
-/* BASE STYLE */
+  /* BASE STYLE */
 
-body,
-html {
+  body,
+  html {
     height: 100%;
     width: 100%;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 70%;
-}
+  }
 
-/* YOGA STYLES */
+  /* YOGA STYLES */
 
-.yogaBoxWrapper {
-   width: 80%;
+  .yogaBoxWrapper {
+    width: 80%;
     margin: 0 auto;
-}
+  }
 
-/* PRACTICE STYLES */
+  /* PRACTICE STYLES */
 
-.practiceBoxWrapper {
+  .practiceBoxWrapper {
     width: 90%;
     margin: 5% auto;
-}
+  }
 
-/* CONTACT STYLES */
+  /* CONTACT STYLES */
 
-.contactBoxWrapper {
+  .contactBoxWrapper {
     width: 90%;
     margin-left: 5%;
-}
+  }
 
-/* MAP STYLE */
+  /* MAP STYLE */
 
-.map img {
+  .map img {
     width: 40%;
     margin-left: 50px;
-}
+  }
 
-/* MODAL */
+  /* MODAL */
 
-.modal-content {
+  .modal-content {
     margin: 10% auto;
     width: 80%;
-}
-
+  }
 }
 
 /* LAPTOP  MAX-WIDTH 1024px */
 
 @media screen and (max-width: 1024px) {
-    body {
-        /* background: lightgreen; */
-    }
+  body {
+    /* background: lightgreen; */
+  }
 
-/* BASE STYLE */
+  /* BASE STYLE */
 
-.section {
+  .section {
     margin-bottom: 50px;
-}
+  }
 
-h1 {
+  h1 {
     margin-bottom: 0;
-}
+  }
 
-/* YOGA STYLES */
+  /* YOGA STYLES */
 
-.yogaBoxWrapper {
+  .yogaBoxWrapper {
     width: 100%;
-     margin: 0 auto;
- }
- .yogaBox {
+    margin: 0 auto;
+  }
+
+  .yogaBox {
     padding: 15px;
-}
+  }
 
-/* PRACTICE STYLES */
+  /* PRACTICE STYLES */
 
-.practiceBoxWrapper {
+  .practiceBoxWrapper {
     width: 95%;
     margin: 0 auto;
     padding-top: 100px;
     grid-gap: 10px;
-}
+  }
 
-/* CONTACT STYLES */
+  /* CONTACT STYLES */
 
-.contactBoxWrapper {
+  .contactBoxWrapper {
     width: 100%;
     padding-bottom: 25px;
     margin: 0 auto;
-}
-.contactBoxes {
+  }
+
+  .contactBoxes {
     padding: 15px;
-}
+  }
 
-/* MAP STYLE */
+  /* MAP STYLE */
 
-.map img {
+  .map img {
     width: 80%;
     margin: 25px auto;
-}
-
-
-
+  }
 }
 
 /* TABLET  MAX-WIDTH 768px */
 
 @media screen and (max-width: 768px) {
-    body {
-       /* background: lightpink; */ 
-    }
+  body {
+    /* background: lightpink; */
+  }
 
-    /* BASE STYLE */
+  /* BASE STYLE */
 
-.section {
+  .practice {
     margin-bottom: 0;
-}
+  }
 
-h1 {
-    margin-bottom: 0;
-}
+  h1 {
+    margin-bottom: 100px;
+  }
 
-/* ABOUT STYLES */
+  .animatedMouseWrapper {
+    display: none;
+  }
 
-.aboutContainer {
+  /* ABOUT STYLES */
+
+  .aboutContainer {
     width: 90%;
     margin-left: 5%;
     margin-top: 150px;
-    }
+  }
 
-.aboutContainer p {
-        width: 90%;
-        margin-left: 5%;
-        padding-bottom: 50px;
-    }
+  .aboutContainer p {
+    width: 90%;
+    margin-left: 5%;
+    padding-bottom: 50px;
+  }
 
-    /* YOGA STYLES */
+  /* YOGA STYLES */
 
-
-.yogaBoxWrapper {
+  .yogaBoxWrapper {
     display: grid;
-    grid-template-columns: 1fr ;
+    grid-template-columns: 1fr;
     width: 70%;
     margin: 0 auto;
     padding-bottom: 0;
-}
+  }
 
-.yogaBox {
+  .yogaBox {
     padding: 10px;
-}
-.yogaBox::after {
-    content: '';
+  }
+  .boxText {
+    justify-content: center;
+    padding-top: 0;
+  }
+
+  .yogaBox::after {
+    content: "";
     height: 5px;
     width: 50px;
-    background: #18191D;
+    background: #18191d;
     display: block;
     margin: 50px auto;
-}
-.right {
+  }
+
+  .right {
     border-right: none;
-}
-.bottom {
+  }
+
+  .bottom {
     border-bottom: none;
-}
+  }
 
-/* PRACTICE STYES */
+  /* PRACTICE STYES */
 
-.headingText{
-    margin-bottom: 50px;
-}
-
-.practiceBoxWrapper {
+  .practiceBoxWrapper {
     display: grid;
     grid-template-columns: 1fr;
     width: 80%;
     margin-left: 10%;
     text-align: center;
     padding: 50px 0;
-}
+  }
 
-.practiceBox {
-   padding: 25px;
-   margin-bottom: 75px;
-    
-}
-.practiceBox:nth-last-child(1) {
-    margin-bottom: 0;
-}
+  .practiceBox {
+    padding: 25px;
+    margin-bottom: 75px;
+  }
 
-/* CONTACT STYLES */
+  /* CONTACT STYLES */
 
-.contactBoxWrapper {
+  .contactBoxWrapper {
     display: grid;
     grid-template-columns: 1fr;
     width: 80%;
     margin-left: 10%;
     padding-bottom: 25px;
-}
+  }
 
-.contactBoxes {
+  .contactBoxes {
     padding: 25px 50px;
-}
+  }
 
-/* FOOTER */
+  /* FOOTER */
 
-.linkswrapper {
+  .linkswrapper {
     width: 80%;
     margin-left: 10%;
     display: flex;
     justify-content: space-between;
-}
-
+  }
 }
 
 /* MOBIL  MAX-WIDTH 425px */
 
 @media screen and (max-width: 425px) {
-    body {
-        background: lightgrey;
-    }
+  body {
+    /* background: lightgrey; */
+  }
+
+  /* BASE STYLE */
+
+  body,
+  html {
+    font-size: 50%;
+  }
+
+  section {
+    margin-bottom: 25px;
+    width: 100%;
+  }
+  .practiceBoxWrapper {
+    padding-bottom: 0;
+  }
+  .practiceBox:nth-last-child(1) {
+    margin-bottom: 0;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  .icon {
+    height: 50px;
+    padding-left: 25px;
+  }
+
+  .text {
+    text-align: center;
+  }
+
+  /* HEADER STYLES */
+
+  header {
+    background: url("img/cover\ mobile.jpg") center/cover no-repeat;
+    min-height: 250px;
+    height: 300px;
+    margin-bottom: 50px;
+  }
+
+  .animatedMouseWrapper {
+    display: none;
+  }
+
+  /* DIVIDER STYLE */
+
+  .dividerBottomWhite {
+    display: none;
+  }
+
+  .dividerOrange {
+    display: none;
+  }
+
+  .dividerOrangeBottom {
+    display: none;
+  }
+
+  /* NAVBAR */
+
+  .navbar {
+    display: none;
+  }
+
+  /* BASE STYLE */
+
+  .section {
+    margin-bottom: 0;
+  }
+
+  h1 {
+    margin-bottom: 0;
+  }
+
+  /* ABOUT STYLES */
+
+  .aboutContainer {
+    margin-top: 100px;
+  }
+
+  /* MODAL */
+
+  .modal-content {
+    margin: 0 auto;
+    width: 95%;
+  }
+  .modalContainer {
+    width: 100%;
+  }
+  .modalContainer img {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  /* YOGA STYLES */
+
+  .yogaBoxWrapper {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 25px;
+    grid-gap: 0;
+  }
+  .yogaBox::after {
+    margin: 25px auto;
+  }
+
+  .yogaBox {
+    padding-top: 0;
+    text-align: center;
+    padding-bottom: 0;
+  }
+
+  .map {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  /* CONTACT STYLES */
+
+  .contactBoxes {
+    padding: 10px 15px;
+  }
+}
+
+/* MOBIL  MAX-WIDTH 375px */
+
+@media screen and (max-width: 375px) {
+  .icon {
+    height: 35px;
+    padding-left: 25px;
+  }
 }

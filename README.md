@@ -1,1 +1,1 @@
-# respinsive_yoga_website
+# responsive_yoga_website
