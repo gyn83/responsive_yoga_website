@@ -93,10 +93,11 @@ h2 {
 /* DIVIDER STYLE */
 
 .dividerBottomWhite {
-  background: url("img/divider_bottom_white\ \(3\).png") no-repeat;
-  height: 200px;
+  background: url("img/Asset\ 1@72x.png") no-repeat;
+  height: 90px;
   width: 100vw;
-  margin-top: -200px;
+  margin-top: -85px;
+  margin-bottom: 100px;
 }
 
 .dividerOrange {
@@ -211,7 +212,6 @@ h2 {
 
 header {
   background: url("img/cover.jpg") center/cover no-repeat;
-  min-height: 1100px;
   height: 100vh;
 }
 
