@@ -32,15 +32,8 @@
   /* CONTACT STYLES */
 
   .contactBoxWrapper {
-    width: 90%;
-    margin-left: 5%;
-  }
-
-  /* MAP STYLE */
-
-  .map img {
-    width: 40%;
-    margin-left: 50px;
+    width: 100%;
+    margin: 0 auto;
   }
 
   /* MODAL */
@@ -91,20 +84,34 @@
   /* CONTACT STYLES */
 
   .contactBoxWrapper {
-    width: 100%;
-    padding-bottom: 25px;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 70%;
     margin: 0 auto;
+    padding-bottom: 25px;
+  }
+  .contactBoxes::after {
+    content: "";
+    height: 5px;
+    width: 50px;
+    background: #18191d;
+    display: block;
+    margin: 50px auto;
+  }
+  .right {
+    border-right: none;
   }
 
   .contactBoxes {
     padding: 15px;
   }
+  .boxText {
+    justify-content: center;
+  }
 
-  /* MAP STYLE */
-
-  .map img {
-    width: 80%;
-    margin: 25px auto;
+  .icon {
+    padding-left: 25px;
+    height: 35px;
   }
 }
 
@@ -129,9 +136,9 @@
     display: none;
   }
 
-   /* MODAL */
+  /* MODAL */
 
-   .modal-content {
+  .modal-content {
     margin: 0 auto;
     width: 95%;
   }
@@ -354,8 +361,9 @@
     padding-bottom: 0;
   }
 
-  .map {
-    text-align: center;
+  #map {
+    width: 90%;
+    margin-left: 5%;
     margin-bottom: 25px;
   }
 

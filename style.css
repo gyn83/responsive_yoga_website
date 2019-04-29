@@ -41,6 +41,12 @@ h2 {
   font-size: 3rem;
   padding: 25px 0;
 }
+.headingTextWhite {
+  padding-bottom: 0;
+}
+h3 {
+  padding-bottom: 25px;
+}
 
 .text {
   line-height: 1.5;
@@ -369,9 +375,9 @@ header {
 
 .contactBoxWrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  width: 60%;
-  margin-left: 20%;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 90%;
+  margin: 0 auto;
   text-align: center;
   padding-bottom: 25px;
 }
@@ -392,36 +398,11 @@ header {
 
 /* MAP STYLES */
 
-.map {
-  text-align: center;
+#map {
+  height: 30rem;
+  width: 80%;
+  margin-left: 10%;
   margin-bottom: 100px;
-}
-
-.map img {
-  -webkit-box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.51);
-  -moz-box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.51);
-  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.51);
-  border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
-  margin-left: 50px;
-  width: 45%;
-}
-
-.map img:hover {
-  transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  -o-transform: scale(1.1);
-  transition: linear;
-  -webkit-transition: linear;
-  -moz-transition: linear;
-  -ms-transition: linear;
-  -o-transition: linear;
-  transition-duration: 800ms;
 }
 
 /* FOOTER */
@@ -446,3 +427,5 @@ footer {
 .socialLinks:hover {
   color: #fff;
 }
+
+/* THIS IS */
