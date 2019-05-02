@@ -111,35 +111,26 @@ function initMap() {
 
 /* ================= TESTIMOTIONALS SLIDER ==================== */
 
-new Glider(document.querySelector(".glider"), {
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  draggable: true,
-  dots: "#dots",
-  arrows: {
-    prev: ".glider-prev",
-    next: ".glider-next"
-  }
-});
+
 
 new Glider(document.querySelector(".glider"), {
   // Mobile-first defaults
-  slidesToShow: 5,
+  slidesToShow: 1,
   slidesToScroll: 1,
   scrollLock: true,
-  dots: "#resp-dots",
+  dots: "#dots",
   arrows: {
     prev: ".glider-prev",
     next: ".glider-next"
   },
   responsive: [
     {
-      // screens greater than >= 775px
-      breakpoint: 775,
+      // screens greater than >= 500px
+      breakpoint: 600,
       settings: {
         // Set to `auto` and provide item width to adjust to viewport
-        slidesToShow: "auto",
-        slidesToScroll: "auto",
+        slidesToShow: 2,
+        slidesToScroll: 1,
         itemWidth: 150,
         duration: 0.25
       }
