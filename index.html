@@ -7,7 +7,10 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
+  <link rel="stylesheet" href="glider.min.css" type="text/css">
   <link rel="stylesheet" href="modal.css" />
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="mediaquery.css" />
@@ -219,33 +222,59 @@
 
   <section class="practice" id="practice">
     <h1 class="headingText">Ők már velem gyakorolnak</h1>
-    <div class="practiceBoxWrapper">
-      <div class="practiceBox">
-        <img src="img/person1.png" alt="Person" class="imagePractice" />
-        <h2>Nóra</h2>
-        <p class="text">
-          Tempor incididunt sunt sint ad ad dolor officia. Qui et quis nisi ad
-          laboris fugiat anim in anim sunt enim excepteur. Ipsum labore
-          occaecat consequat dolor.
-        </p>
+    <div class="glider-contain multiple">
+      <button class="glider-prev">
+        <i class="fa fa-chevron-left"></i>
+      </button>
+      <div class="practiceBoxWrapper glider">
+        <div class="practiceBox">
+          <img src="img/person1.png" alt="Person" class="imagePractice" />
+          <h2>Zsuzsanna</h2>
+          <p class="text">
+            Wera különleges órákat tartott nekünk egy sóbarlangban. Nagy odafigyeléssel, jól vezette az órákat.
+            Mindenkire külön-külön is figyelt. Különösen jó volt, hogy
+            ezeket a gyakorlatokat a sós levegőben végezhettük.
+          </p>
+        </div>
+        <div class="practiceBox">
+          <img src="img/person2.png" alt="Person" class="imagePractice" />
+          <h2>Melinda</h2>
+          <p class="text">
+            Wera végtelen türelemmel és pozitív kisugárzásával élménnyé teszi a
+            jógaórát. Az első alkalmat követően napokig úgy éreztem magam, mintha újjászülettem volna, izületeim
+            mozgékonyabbak, légzésem nyitottabbá vált. Mindenkinek szeretettel ajánlom az óráit.
+          </p>
+        </div>
+        <div class="practiceBox">
+          <img src="img/person3.png" alt="Person" class="imagePractice" />
+          <h2>Dóra</h2>
+          <p class="text">
+            Wera figyel rád. Azokat a gyakorlatokat adja neked, amelyekre éppen akkor szükséged van.
+          </p>
+        </div>
+        <div class="practiceBox">
+          <img src="img/girl.png" alt="Person" class="imagePractice" />
+          <h2>Boldog lány</h2>
+          <p class="text">
+            Legyél te ez... Gyere jógázni.
+            A jóga mindennapos gyakorlása javítja az egészséget, jó közérzetet teremt, mentális megtisztulást hoz és az
+            életminőség javulását eredményezi.
+          </p>
+        </div>
+        <div class="practiceBox">
+          <img src="img/man.png" alt="Person" class="imagePractice" />
+          <h2>Boldog fiú</h2>
+          <p class="text">
+            Legyél te ez... Gyere jógázni.
+            A jóga mindennapos gyakorlása javítja az egészséget, jó közérzetet teremt, mentális megtisztulást hoz és az
+            életminőség javulását eredményezi.
+          </p>
+        </div>
       </div>
-      <div class="practiceBox">
-        <img src="img/person2.png" alt="Person" class="imagePractice" />
-        <h2>Yuen</h2>
-        <p class="text">
-          Cupidatat nulla sunt sunt nostrud ex voluptate sit minim ea ullamco
-          tempor commodo occaecat.
-        </p>
-      </div>
-      <div class="practiceBox">
-        <img src="img/person3.png" alt="Person" class="imagePractice" />
-        <h2>Peti</h2>
-        <p class="text">
-          Nisi in excepteur ullamco irure et. Et dolore irure minim nulla
-          incididunt occaecat officia minim. Do eu deserunt fugiat pariatur
-          reprehenderit in.
-        </p>
-      </div>
+      <button class="glider-next">
+        <i class="fa fa-chevron-right"></i>
+      </button>
+      <div id="dots" class="glider-dots"></div>
     </div>
   </section>
 
@@ -266,6 +295,7 @@
           <p class="text">
             Hatha órák a 108 Életmódközpontban a Jászai Mari térnél (XIII., Szent István krt. 6.)
           </p>
+          <a href="https://108.hu/" class="text" target="_blank">www.108.hu</a>
         </div>
         <div class="contactBoxes right right2">
           <div class="boxText">
@@ -275,6 +305,7 @@
           <p class="text">
             Forrójóga a Forrójóga Stúdióban az Árpád-hídnál (XIII., Váci út 83.)
           </p>
+          <a href="https://forrojoga.hu/" class="text" target="_blank">www.forrójóga.hu</a>
         </div>
         <div class="contactBoxes other">
           <div class="boxText">
@@ -301,7 +332,7 @@
     <div class="linkswrapper" id="footer">
       <a href="#" class="socialLinks"><i class="fab fa-facebook"></i></a>
       <a href="#" class="socialLinks"><i class="fab fa-twitter-square"></i></a>
-      <a href="#" class="socialLinks"><i class="fab fa-youtube-square"></i></a>
+      <a href="#" class="socialLinks"><i class="fab fa-youtube"></i></a>
       <a href="#" class="socialLinks"><i class="fab fa-skype"></i></a>
       <a href="http://blog.jogaweraval.hu/" target="_blank" class="socialLinks"><i class="fas fa-blog"></i></a>
     </div>
@@ -309,7 +340,9 @@
 
   <!-- JAVASCRIPT -->
 
+  <script src="glider.min.js"></script>
   <script src="script.js"></script>
+
   <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSPSIo0vwFO1mcDRwGyGY5z2b5XB7mIuc&callback=initMap">
   </script>

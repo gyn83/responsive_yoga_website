@@ -22,19 +22,6 @@
     margin: 0 auto;
   }
 
-  /* PRACTICE STYLES */
-
-  .practiceBoxWrapper {
-    width: 90%;
-    margin: 5% auto;
-  }
-
-  /* CONTACT STYLES */
-
-  .contactBoxWrapper {
-    width: 100%;
-    margin: 0 auto;
-  }
 
   /* MODAL */
 
@@ -52,7 +39,6 @@
   }
 
   /* BASE STYLE */
-
   .section {
     margin-bottom: 50px;
   }
@@ -60,11 +46,14 @@
   h1 {
     margin-bottom: 0;
   }
+  h2 {
+    padding-right: 10px;
+  }
 
   /* YOGA STYLES */
 
   .yogaBoxWrapper {
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
   }
 
@@ -74,46 +63,22 @@
 
   /* PRACTICE STYLES */
 
-  .practiceBoxWrapper {
-    width: 95%;
-    margin: 0 auto;
-    padding-top: 100px;
-    grid-gap: 10px;
+  .practiceBox {
+    margin: 75px 0.25em 0.5em 0.25em;
+    text-align: center;
   }
 
-  /* CONTACT STYLES */
-
-  .contactBoxWrapper {
-    display: grid;
-    grid-template-columns: 1fr;
-    width: 70%;
-    margin: 0 auto;
-    padding-bottom: 25px;
-  }
-  .contactBoxes::after {
-    content: "";
-    height: 5px;
-    width: 50px;
-    background: #18191d;
-    display: block;
-    margin: 50px auto;
-  }
-  .right {
-    border-right: none;
+  .glider-prev {
+    left: 15px;
+    top: 50%;
   }
 
-  .contactBoxes {
-    padding: 15px;
-  }
-  .boxText {
-    justify-content: center;
+  .glider-next {
+    right: 15px;
+    top: 50%;
   }
 
-  .icon {
-    padding-left: 25px;
-    height: 35px;
-  }
-}
+
 
 /* TABLET  MAX-WIDTH 768px */
 
@@ -129,22 +94,38 @@
   }
 
   h1 {
-    margin-bottom: 100px;
+    margin-bottom: 0;
   }
 
   .animatedMouseWrapper {
     display: none;
   }
 
-  /* MODAL */
+  /* DIVIDER STYLE */
+
+  .dividerOrange {
+    background: url("img/divider_orange_top.svg") no-repeat;
+    height: 200px;
+    margin-bottom: -40px;
+  }
+  
+  .dividerOrangeBottom {
+    background: url("img/divider_bottom_orange.png") no-repeat center/cover;
+    height: 80px;
+    margin-top: -1;
+  }
+  
+/* MODAL */
 
   .modal-content {
     margin: 0 auto;
     width: 95%;
   }
+
   .modalContainer {
     width: 100%;
   }
+
   .modalContainer img {
     width: 95%;
     margin: 0 auto;
@@ -177,6 +158,7 @@
   .yogaBox {
     padding: 10px;
   }
+
   .boxText {
     justify-content: center;
     padding-top: 0;
@@ -199,38 +181,54 @@
     border-bottom: none;
   }
 
-  /* PRACTICE STYES */
+  /* PRACTICE STYLES */
+
+  .practice {
+    margin-bottom: 50px;
+  }
 
   .practiceBoxWrapper {
-    display: grid;
-    grid-template-columns: 1fr;
-    width: 80%;
-    margin-left: 10%;
-    text-align: center;
-    padding: 50px 0;
-  }
-  .practice {
-    margin-bottom: 25px;
+    width: 90%;
   }
 
   .practiceBox {
-    padding: 25px;
-    margin-bottom: 75px;
+    margin: 50px 2px 2px 0;
+    text-align: center;
   }
 
-  /* CONTACT STYLES */
-
-  .contactBoxWrapper {
-    display: grid;
-    grid-template-columns: 1fr;
-    width: 80%;
-    margin-left: 10%;
-    padding-bottom: 25px;
+  .practiceBox .text {
+    padding: 0 1em 1em 1em;
   }
 
-  .contactBoxes {
-    padding: 25px 50px;
+  .imagePractice {
+    height: 100px;
+    margin-top: -50px;
   }
+
+
+/* CONTACT STYLES */
+
+
+.contactBoxWrapper {
+  display: block;
+  width: 95%;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.contactBoxes {
+  width: 80%;
+  margin: 0 auto;
+}
+.contactBoxes::after {
+  content: "";
+  height: 5px;
+  width: 50px;
+  background: #18191d;
+  display: block;
+  margin: 50px auto;
+}
 
   /* FOOTER */
 
@@ -260,9 +258,11 @@
     margin-bottom: 25px;
     width: 100%;
   }
+
   .practiceBoxWrapper {
     padding-bottom: 0;
   }
+
   .practiceBox:nth-last-child(1) {
     margin-bottom: 0;
   }
@@ -335,9 +335,11 @@
     margin: 0 auto;
     width: 95%;
   }
+
   .modalContainer {
     width: 100%;
   }
+
   .modalContainer img {
     width: 95%;
     margin: 0 auto;
@@ -351,6 +353,7 @@
     padding-top: 25px;
     grid-gap: 0;
   }
+
   .yogaBox::after {
     margin: 25px auto;
   }
@@ -360,6 +363,8 @@
     text-align: center;
     padding-bottom: 0;
   }
+
+  /* MAP STYLES */
 
   #map {
     width: 90%;
