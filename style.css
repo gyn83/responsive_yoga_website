@@ -379,6 +379,10 @@ header {
   width: 33%;
 }
 
+.contact_text {
+  padding-bottom: 25px;
+}
+
 .contactBoxes a {
   text-decoration: none;
   font-weight: bold;
