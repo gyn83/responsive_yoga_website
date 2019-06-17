@@ -68,20 +68,14 @@
     margin: 0 auto;
 }
 
-.modalListText li {
-    text-align: center;
-    list-style: none;
-    padding: 25px;
-}
-
-.modal-body ul {
-    margin: 0 auto;
-    text-align: center;
-    padding: 50px 0;
-}
-
 .modalContainer {
     padding-bottom: 50px;
+}
+
+.modalContainer img {
+    max-width: 100%;
+    width: 40%;
+    padding: 1em;
 }
 
 .modal-footer {
